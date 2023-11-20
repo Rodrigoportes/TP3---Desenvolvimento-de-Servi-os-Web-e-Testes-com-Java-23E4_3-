@@ -1,0 +1,11 @@
+<configuration>
+   <include resource="org/springfrarework/boot/logging/logback/defaults.xnl"/>
+   <appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
+         <enconder>
+            <pattern>%d{HH:mm:ss.SSS} {%thread} %-5level %logger{5} </pattern>
+         </enconder>
+   </appender>
+   <root level="debug">
+      <appender-ref ref="STDDUT"/>
+   </root>
+</configuration>
